@@ -1,0 +1,28 @@
+﻿  main.cc
+d:\cg\raytracing\raytracinginoneweekend\vec3.h(64): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\cg\raytracing\raytracinginoneweekend\vec3.h(143): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\cg\raytracing\raytracinginoneweekend\hitable_list.h(20): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+d:\cg\raytracing\raytracinginoneweekend\camera.h(17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\cg\raytracing\raytracinginoneweekend\material.h(19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\cg\raytracing\raytracinginoneweekend\material.h(94): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\cg\raytracing\raytracinginoneweekend\main.cc(11): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\cg\raytracing\raytracinginoneweekend\main.cc(23): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\cg\raytracing\raytracinginoneweekend\main.cc(24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+d:\cg\raytracing\raytracinginoneweekend\main.cc(24): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\cg\raytracing\raytracinginoneweekend\main.cc(37): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+d:\cg\raytracing\raytracinginoneweekend\main.cc(37): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\cg\raytracing\raytracinginoneweekend\main.cc(38): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\cg\raytracing\raytracinginoneweekend\main.cc(40): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\cg\raytracing\raytracinginoneweekend\main.cc(44): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+d:\cg\raytracing\raytracinginoneweekend\main.cc(44): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\cg\raytracing\raytracinginoneweekend\main.cc(47): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\cg\raytracing\raytracinginoneweekend\main.cc(54): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\cg\raytracing\raytracinginoneweekend\main.cc(55): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\cg\raytracing\raytracinginoneweekend\main.cc(67): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\cg\raytracing\raytracinginoneweekend\main.cc(68): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\cg\raytracing\raytracinginoneweekend\main.cc(69): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\cg\raytracing\raytracinginoneweekend\main.cc(70): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\cg\raytracing\raytracinginoneweekend\main.cc(72): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\cg\raytracing\raytracinginoneweekend\main.cc(79): warning C4305: 'initializing': truncation from 'double' to 'float'
+  RayTraceWeekend.vcxproj -> D:\Cg\RayTracing\raytracinginoneweekend\RayTraceWeekend\Debug\RayTraceWeekend.exe
+  RayTraceWeekend.vcxproj -> D:\Cg\RayTracing\raytracinginoneweekend\RayTraceWeekend\Debug\RayTraceWeekend.pdb (Full PDB)

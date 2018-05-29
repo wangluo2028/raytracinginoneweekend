@@ -1,9 +1,20 @@
 #ifndef VEC3H
 #define VEC3H
 
-#include <math.h>
+//#include <math.h>
 #include <stdlib.h>
 #include <iostream>
+#include <cmath>
+#include <cfloat>
+#include <limits>
+
+float drand48()
+{
+	return float(rand()) / RAND_MAX;
+}
+
+//#define MAXFLOAT FLT_MAX
+const float MAXFLOAT = std::numeric_limits<float>::max();
 
 class vec3  {
 
@@ -33,7 +44,6 @@ public:
     inline float length() const { return sqrt(e[0]*e[0] + e[1]*e[1] + e[2]*e[2]); }
     inline float squared_length() const { return e[0]*e[0] + e[1]*e[1] + e[2]*e[2]; }
     inline void make_unit_vector();
-    
     
     float e[3];
 };

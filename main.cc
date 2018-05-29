@@ -4,7 +4,7 @@
 #include "float.h"
 #include "camera.h"
 #include "material.h"
-
+#include "RayTraceWeekend/RayTraceWeekend/PPMSaver.h"
 
 vec3 color(const ray& r, hitable *world, int depth) {
     hit_record rec;
@@ -57,6 +57,7 @@ hitable *random_scene() {
     return new hitable_list(list,i);
 }
 
+
 int main() {
     int nx = 1200;
     int ny = 800;
@@ -70,7 +71,7 @@ int main() {
     list[3] = new sphere(vec3(-1,0,-1), 0.5, new dielectric(1.5));
     list[4] = new sphere(vec3(-1,0,-1), -0.45, new dielectric(1.5));
     hitable *world = new hitable_list(list,5);
-    world = random_scene();
+   // world = random_scene();
 
     vec3 lookfrom(13,2,3);
     vec3 lookat(0,0,0);
@@ -78,6 +79,8 @@ int main() {
     float aperture = 0.1;
 
     camera cam(lookfrom, lookat, vec3(0,1,0), 20, float(nx)/float(ny), aperture, dist_to_focus);
+
+	Color3f *imageData = new Color3f[nx*ny], *pixel = imageData;
 
     for (int j = ny-1; j >= 0; j--) {
         for (int i = 0; i < nx; i++) {
@@ -94,9 +97,14 @@ int main() {
             int ir = int(255.99*col[0]); 
             int ig = int(255.99*col[1]); 
             int ib = int(255.99*col[2]); 
-            std::cout << ir << " " << ig << " " << ib << "\n";
+            //std::cout << ir << " " << ig << " " << ib << "\n";
+
+			*(pixel++) = Color3f(ir, ig, ib);
         }
     }
+
+	saveToPPM("./Picture.ppm", imageData, nx, ny);
+
 }
 
 
